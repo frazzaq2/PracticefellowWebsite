@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Book a Demo — PracticeFellow</title>
+<meta name="description" content="Book a live PracticeFellow demo or send us a message. We reply within one business day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="brand-mark">+</span><span><b>Practice</b><span class="fellow">fellow</span></span></a>
+    <nav class="nav-links" id="navLinks"><a href="features.html">Features</a><a href="index.html#tour">Product tour</a><a href="pricing.html">Pricing</a><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-cta"><a class="btn btn-ghost btn-sm" href="https://www.practicefellow.com" target="_blank" rel="noopener">Sign in</a><a class="btn btn-primary btn-sm" href="contact.html">Book a demo</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+<div class="page-hero"><div class="wrap">
+  <span class="eyebrow">Get in touch</span>
+  <h1>Book your personalized demo</h1>
+  <p>30 minutes with our team, tailored to your specialty. Or just say hello — we reply within one business day.</p>
+</div></div>
+<section><div class="wrap">
+  <div class="split" style="align-items:start">
+    <div class="form-card">
+      <div class="form-ok" id="formOk">✓ Thanks! Your request was received. We'll reach out shortly to schedule your demo.</div>
+      <form id="leadForm" novalidate>
+        <div class="field-row">
+          <div class="field"><label for="fName">Full name *</label><input id="fName" name="name" required placeholder="Jane Doe"></div>
+          <div class="field"><label for="fEmail">Work email *</label><input id="fEmail" name="email" type="email" required placeholder="jane@clinic.com"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="fPhone">Phone</label><input id="fPhone" name="phone" type="tel" placeholder="(555) 123-4567"></div>
+          <div class="field"><label for="fPractice">Practice name *</label><input id="fPractice" name="practice" required placeholder="Sunrise Therapy Group"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="fSpecialty">Specialty</label><select id="fSpecialty" name="specialty"><option>ABA Therapy</option><option>Speech Therapy</option><option>Occupational Therapy</option><option>Internal Medicine</option><option>Other</option></select></div>
+          <div class="field"><label for="fProviders">Providers</label><select id="fProviders" name="providers"><option>1</option><option>2–5</option><option>6–15</option><option>16–50</option><option>50+</option></select></div>
+        </div>
+        <div class="field"><label for="fType">I'm interested in</label><select id="fType" name="type"><option>Live demo</option><option>Pricing quote</option><option>Migration from another EHR</option><option>AI early access</option><option>Just saying hello</option></select></div>
+        <div class="field"><label for="fMsg">Message</label><textarea id="fMsg" name="message" rows="4" placeholder="Tell us about your practice and what you're looking for…"></textarea></div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Request demo</button>
+        <p class="form-note">By submitting, you agree to be contacted about PracticeFellow. We never share your information.</p>
+      </form>
+    </div>
+    <div>
+      <h2 style="font-size:26px">What happens next?</h2>
+      <ul class="check-list">
+        <li><span><b>1. We reach out</b> — within one business day to find a time.</span></li>
+        <li><span><b>2. Tailored walkthrough</b> — we demo your specialty's workflows on realistic data.</span></li>
+        <li><span><b>3. Quote &amp; migration plan</b> — transparent pricing and a data-import plan.</span></li>
+      </ul>
+      <div class="card mt-32"><h3>Prefer email?</h3><p class="mt-16">Reach us anytime at <a href="mailto:hello@practicefellow.com"><b>hello@practicefellow.com</b></a></p><p class="mt-16" style="color:var(--muted);font-size:14.5px">Already a customer? Sign in at <a href="https://www.practicefellow.com" target="_blank" rel="noopener">practicefellow.com</a>.</p></div>
+      <div class="notice blue mt-24"><b>For the site owner:</b> form submissions are stored locally for demo and POSTed to the endpoint configured in <code class="inline">assets/js/main.js</code> (<code class="inline">LEAD_ENDPOINT</code>). View them anytime in the <a href="dashboard.html"><b>client dashboard</b></a>.</div>
+    </div>
+  </div>
+</div></section>
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div><div class="foot-brand"><span class="brand-mark">+</span><span><b>Practice</b><span style="color:#7ef0ee">fellow</span></span></div><p style="font-size:14.5px;max-width:300px">The all-in-one EHR for therapy and medical practices.</p></div>
+    <div><h4>Product</h4><a href="features.html">Features</a><a href="index.html#tour">Product tour</a><a href="pricing.html">Pricing</a></div>
+    <div><h4>Company</h4><a href="contact.html">Contact</a><a href="contact.html">Book a demo</a><a href="dashboard.html">Client login</a></div>
+    <div><h4>Legal</h4><a href="#">Terms of Service</a><a href="#">Privacy Policy</a><a href="#">HIPAA Notice</a></div>
+  </div>
+  <div class="foot-bottom"><span>© 2026 PracticeFellow. All rights reserved.</span><span>Built with care for care teams.</span></div>
+</div></footer>
+<script src="assets/js/main.js"></script>
+</body></html>

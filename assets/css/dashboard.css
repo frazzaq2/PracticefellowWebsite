@@ -1,0 +1,30 @@
+/* Client dashboard — admin console styling */
+.dash{display:grid;grid-template-columns:248px 1fr;min-height:100vh;background:var(--bg)}
+.side{background:#101a30;color:#c6cfe6;padding:22px 16px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:6px}
+.side .brand{color:#fff;margin-bottom:20px;padding:0 8px}
+.side a.slink{display:flex;align-items:center;gap:11px;color:#aab6d6;font-weight:600;font-size:14.5px;padding:11px 13px;border-radius:10px}
+.side a.slink:hover{background:#1a2544;color:#fff}
+.side a.slink.active{background:var(--primary);color:#fff}
+.side .s-foot{margin-top:auto;font-size:12px;color:#6b78a0;padding:10px 8px}
+.dash-main{padding:30px 34px;max-width:1200px}
+.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;gap:16px;flex-wrap:wrap}
+.dash-top h1{font-size:26px}
+.dash-view{display:none}.dash-view.active{display:block}
+.dtable{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border-soft);border-radius:var(--radius);overflow:hidden;font-size:14px;box-shadow:var(--shadow-sm)}
+.dtable th{text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);padding:13px 16px;border-bottom:1px solid var(--border-soft);background:#fafbff;white-space:nowrap}
+.dtable td{padding:13px 16px;border-bottom:1px solid var(--border-soft);vertical-align:top}
+.dtable tr:last-child td{border-bottom:none}
+.dtable tr:hover td{background:#fafbff}
+.toolbar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.toolbar input,.toolbar select{border:1.5px solid var(--border);border-radius:10px;padding:10px 14px;font-size:14px;font-family:inherit}
+.toolbar input{min-width:260px}
+.kpi-row{margin:0 0 24px}
+.stripe-card{background:linear-gradient(120deg,#1b1440,#2c2370);color:#fff;border-radius:var(--radius-lg);padding:32px;margin-bottom:24px}
+.stripe-card h3{color:#fff;margin-bottom:8px}
+.stripe-card p{color:#c9cdf5;font-size:14.5px;max-width:640px}
+.stripe-card code{background:rgba(255,255,255,.12);padding:2px 8px;border-radius:6px;font-size:13px;color:#fff}
+.key-row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.key-row input{flex:1;min-width:280px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:10px;padding:12px 14px;font-size:14px}
+.key-row input::placeholder{color:#9aa3d6}
+.empty{background:#fff;border:1px dashed var(--border);border-radius:var(--radius);padding:48px;text-align:center;color:var(--faint)}
+@media(max-width:900px){.dash{grid-template-columns:1fr}.side{position:static;height:auto;flex-direction:row;flex-wrap:wrap;align-items:center}.side .s-foot{display:none}.dash-main{padding:20px}}
