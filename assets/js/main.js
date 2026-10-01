@@ -104,7 +104,13 @@
     player.dataset.playing = "1";
     player.style.cursor = "default";
     var v = document.createElement("video");
-    v.src = "assets/video/practicefellow-demo.mp4";
+    var s1 = document.createElement("source");
+    s1.src = "assets/video/practicefellow-demo.mp4"; /* local copy once uploaded to repo */
+    s1.type = "video/mp4";
+    var s2 = document.createElement("source");
+    s2.src = "https://muse.ai/files/1313649305169976/38774401878874588/rmohzqzl2qwcxfuplh5xl817/practicefellow-demo.mp4"; /* hosted fallback */
+    s2.type = "video/mp4";
+    v.appendChild(s1); v.appendChild(s2);
     v.controls = true;
     v.playsInline = true;
     v.poster = "assets/video/practicefellow-demo-poster.jpg";
