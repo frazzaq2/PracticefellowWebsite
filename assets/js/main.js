@@ -85,3 +85,108 @@
     });
   }
 })();
+
+/* ---- Pro motion: GSAP hero, scroll reveals, counters, video ---- */
+(function () {
+  "use strict";
+
+  /* Header shadow on scroll */
+  var header = document.getElementById("siteHeader");
+  function onScroll() { if (header) header.classList.toggle("scrolled", window.scrollY > 12); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* Click-to-play product video */
+  var player = document.getElementById("videoPlayer");
+  var playBtn = document.getElementById("videoPlayBtn");
+  function playVideo() {
+    if (!player || player.dataset.playing) return;
+    player.dataset.playing = "1";
+    player.style.cursor = "default";
+    var v = document.createElement("video");
+    v.src = "assets/video/practicefellow-demo.mp4";
+    v.controls = true;
+    v.playsInline = true;
+    v.poster = "assets/video/practicefellow-demo-poster.jpg";
+    player.innerHTML = "";
+    player.appendChild(v);
+    v.play().catch(function () {});
+  }
+  if (playBtn) playBtn.addEventListener("click", function (e) { e.stopPropagation(); playVideo(); });
+  if (player) player.addEventListener("click", playVideo);
+
+  /* Animated counters */
+  function animateCount(el) {
+    var target = parseFloat(el.getAttribute("data-count") || "0");
+    var prefix = el.getAttribute("data-prefix") || "";
+    var suffix = el.getAttribute("data-suffix") || "";
+    var dur = 1600, t0 = null;
+    function fmt(n) { return prefix + Math.round(n).toLocaleString("en-US") + suffix; }
+    function tick(t) {
+      if (!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * eased);
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* GSAP-powered motion (graceful fallback without it) */
+  if (window.gsap && !reduceMotion) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* Hero entrance */
+    gsap.from("[data-hero]", {
+      y: 36, opacity: 0, duration: 0.9, stagger: 0.12, ease: "power3.out", delay: 0.15
+    });
+
+    /* Scroll reveals */
+    gsap.utils.toArray("[data-reveal]").forEach(function (el) {
+      gsap.from(el, {
+        y: 44, opacity: 0, duration: 0.85, ease: "power3.out",
+        scrollTrigger: { trigger: el, start: "top 88%", once: true }
+      });
+    });
+
+    /* Counters fire when visible */
+    document.querySelectorAll("[data-count]").forEach(function (el) {
+      ScrollTrigger.create({
+        trigger: el, start: "top 92%", once: true,
+        onEnter: function () { animateCount(el); }
+      });
+    });
+
+    /* Subtle parallax on orbs */
+    gsap.to(".orb-1", { y: 60, scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 1 } });
+    gsap.to(".orb-2", { y: -40, scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: 1 } });
+
+    /* Tour panel content animates on tab switch */
+    var tabs = document.querySelectorAll("#tourTabs .tab");
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var i = parseInt(tab.getAttribute("data-tour"), 10);
+        var panels = document.querySelectorAll(".tour-panel");
+        if (panels[i]) gsap.from(panels[i], { y: 18, opacity: 0, duration: 0.45, ease: "power2.out" });
+      });
+    });
+  } else {
+    /* No GSAP or reduced motion: just run counters when visible */
+    var counted = new WeakSet();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting && !counted.has(en.target)) {
+          counted.add(en.target);
+          if (!reduceMotion) animateCount(en.target); else {
+            var t = parseFloat(en.target.getAttribute("data-count") || "0");
+            en.target.textContent = (en.target.getAttribute("data-prefix") || "") + Math.round(t).toLocaleString("en-US") + (en.target.getAttribute("data-suffix") || "");
+          }
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll("[data-count]").forEach(function (el) { io.observe(el); });
+  }
+})();

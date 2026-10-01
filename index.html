@@ -3,21 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PracticeFellow — All-in-One EHR for Modern Practices</title>
-<meta name="description" content="PracticeFellow is the all-in-one medical EHR: scheduling, patient management, smart notes, billing & EDI claims, eligibility, authorizations, multi-clinic management and more.">
+<title>PracticeFellow — Get Paid Faster. Finish Notes in Minutes.</title>
+<meta name="description" content="PracticeFellow is the all-in-one EHR for therapy & medical practices: scheduling, smart notes, billing & EDI claims, eligibility, multi-clinic management — plus done-for-you billing & admin services nationwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header" id="siteHeader">
   <div class="wrap nav">
     <a class="brand" href="index.html"><span class="brand-mark">+</span><span><b>Practice</b><span class="fellow">fellow</span></span></a>
     <nav class="nav-links" id="navLinks">
       <a href="features.html">Features</a>
-      <a href="index.html#tour">Product tour</a>
+      <a href="index.html#demo">Watch demo</a>
+      <a href="index.html#services">Services</a>
       <a href="pricing.html">Pricing</a>
       <a href="index.html#faq">FAQ</a>
       <a href="contact.html">Contact</a>
@@ -31,31 +33,32 @@
 </header>
 
 <section class="hero">
+  <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
   <div class="wrap">
-    <div>
-      <span class="eyebrow">Medical EHR · Built for growth</span>
-      <h1>One platform to run your <span class="grad">entire practice</span></h1>
-      <p class="lead">Scheduling, patients, smart clinical notes, billing &amp; EDI claims, eligibility, authorizations, multi-clinic management, payroll — PracticeFellow brings every workflow into one fast, beautiful system.</p>
-      <div class="hero-cta">
+    <div class="hero-copy">
+      <span class="eyebrow" data-hero>Medical EHR + Billing Services · Nationwide</span>
+      <h1 data-hero>Get paid faster.<br><span class="grad">Finish notes in minutes.</span></h1>
+      <p class="lead" data-hero>PracticeFellow is the all-in-one EHR for therapy and medical practices — scheduling, smart clinical notes, billing &amp; EDI claims, eligibility, and multi-clinic management in one login. And when you want it fully handled, our <b>billing &amp; admin support services</b> do it for you, in all 50 states.</p>
+      <div class="hero-cta" data-hero>
         <a class="btn btn-primary btn-lg" href="contact.html">Book a live demo</a>
-        <a class="btn btn-ghost btn-lg" href="features.html">Explore features</a>
+        <a class="btn btn-ghost btn-lg btn-play" href="#demo"><span class="play-tri">▶</span> Watch it in action</a>
       </div>
-      <div class="hero-proof">
+      <div class="hero-proof" data-hero>
         <span><i class="dot"></i> HIPAA-conscious design</span>
-        <span><i class="dot"></i> Multi-clinic ready</span>
+        <span><i class="dot"></i> Serving all 50 states</span>
         <span><i class="dot"></i> Live today at practicefellow.com</span>
       </div>
     </div>
-    <div>
-      <div class="app-mock">
-        <div class="mock-bar"><div class="mock-dots"><i></i><i></i><i></i></div><div class="mock-url">app.practicefellow.com · Agency Console</div></div>
+    <div class="hero-visual" data-hero>
+      <div class="app-mock float">
+        <div class="mock-bar"><div class="mock-dots"><i></i><i></i><i></i></div><div class="mock-url">app.practicefellow.com · Agency Console</div><span class="live-pill"><i class="pulse"></i> LIVE</span></div>
         <div class="mock-body">
           <div class="mock-head"><b>Agency Console</b><span class="pill">+ Create Clinic</span></div>
           <div class="mock-stats">
-            <div class="mock-stat"><small>Revenue collected</small><b>$34,981</b></div>
-            <div class="mock-stat"><small>Active clinics</small><b>16</b></div>
-            <div class="mock-stat"><small>Patients</small><b>351</b></div>
-            <div class="mock-stat"><small>Claims</small><b>408</b></div>
+            <div class="mock-stat"><small>Revenue collected</small><b data-count="34981" data-prefix="$">$0</b><span class="spark"><i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:45%"></i><i style="--h:80%"></i><i style="--h:66%"></i><i style="--h:100%"></i></span></div>
+            <div class="mock-stat"><small>Active clinics</small><b data-count="16">0</b></div>
+            <div class="mock-stat"><small>Patients</small><b data-count="351">0</b></div>
+            <div class="mock-stat"><small>Claims</small><b data-count="408">0</b></div>
           </div>
           <div class="mock-cols">
             <div class="mock-panel">
@@ -77,50 +80,109 @@
       </div>
     </div>
   </div>
+  <div class="wrap stats-band" data-hero>
+    <div class="stats-label">Live product data</div>
+    <div class="stats-grid">
+      <div><b data-count="16">0</b><span>clinics managed</span></div>
+      <div><b data-count="351">0</b><span>patients</span></div>
+      <div><b data-count="408">0</b><span>claims processed</span></div>
+      <div><b data-count="46" data-suffix="+">0</b><span>note templates</span></div>
+    </div>
+  </div>
 </section>
 
-<div class="trust">
-  <div class="wrap">
-    <span>BUILT FOR</span>
-    <span class="t-logo">ABA Therapy Groups</span>
-    <span class="t-logo">Speech &amp; OT Clinics</span>
-    <span class="t-logo">Internal Medicine</span>
-    <span class="t-logo">Multi-Location Agencies</span>
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>ABA Therapy</span><span>Speech Therapy</span><span>Occupational Therapy</span><span>Internal Medicine</span><span>Behavioral Health</span><span>Physical Therapy</span><span>Multi-Location Agencies</span>
+    <span>ABA Therapy</span><span>Speech Therapy</span><span>Occupational Therapy</span><span>Internal Medicine</span><span>Behavioral Health</span><span>Physical Therapy</span><span>Multi-Location Agencies</span>
   </div>
 </div>
 
+<section id="demo" class="demo-section">
+  <div class="wrap">
+    <div class="center" data-reveal>
+      <span class="eyebrow">88-second tour</span>
+      <h2>Watch PracticeFellow in action</h2>
+      <p class="lead">Agency console, scheduling, notes, templates, patients, billing — narrated, start to finish. Click play.</p>
+    </div>
+    <div class="video-player" id="videoPlayer" data-reveal>
+      <img class="video-poster" src="assets/video/practicefellow-demo-poster.jpg" alt="PracticeFellow product tour video — click to play">
+      <button class="video-play" id="videoPlayBtn" aria-label="Play product tour video">
+        <span class="play-ring"></span>
+        <span class="play-icon">▶</span>
+      </button>
+      <span class="video-duration">1:28</span>
+    </div>
+  </div>
+</section>
+
 <section id="features">
   <div class="wrap">
-    <div class="center">
+    <div class="center" data-reveal>
       <span class="eyebrow">Everything included</span>
       <h2>Every workflow, one login</h2>
       <p class="lead">Stop stitching together five tools. PracticeFellow covers the full lifecycle of a visit — from scheduling to signed note to paid claim.</p>
     </div>
     <div class="grid-3 mt-48">
-      <div class="card"><div class="icon">📅</div><h3>Appointments &amp; Scheduling</h3><p>Week/day views, provider filters, patient calendars, status colors, and density indicators — scheduling that keeps every chair full.</p></div>
-      <div class="card"><div class="icon teal">👥</div><h3>Patient Management</h3><p>Rich patient profiles with insurance, balances, visit history, authorizations, and document tracking in one searchable roster.</p></div>
-      <div class="card"><div class="icon green">📝</div><h3>Custom Note Templates</h3><p>46+ ready templates across ABA, internal medicine and general — or build your own with sections, fields and signatures.</p></div>
-      <div class="card"><div class="icon amber">⚡</div><h3>Easy Notes</h3><p>Notes Center with status breakdowns, completion tracking, co-sign workflows and deficiency worklists. Nothing slips.</p></div>
-      <div class="card"><div class="icon pink">🎙️</div><h3>Live Audio Transcription</h3><p>Dictate or transcribe sessions live into structured notes — finish documentation before the patient leaves the room.</p></div>
-      <div class="card"><div class="icon">💳</div><h3>Billing &amp; EDI Claims</h3><p>Billing entries, claim tracking, ERA remittances, insurance &amp; patient payments, and bank reconciliation — revenue cycle, handled.</p></div>
-      <div class="card"><div class="icon teal">🛡️</div><h3>Electronic Eligibility</h3><p>Run and manage insurance eligibility checks for your clients — batch checks, coverage history, and inactive alerts.</p></div>
-      <div class="card"><div class="icon green">📋</div><h3>Authorizations &amp; Referrals</h3><p>Track auth numbers, date ranges, CPT units and utilization so visits never happen without coverage.</p></div>
-      <div class="card"><div class="icon amber">🏥</div><h3>Multi-Clinic Management</h3><p>Agency Console to manage every location: revenue, claims, patients, users and security alerts across clinics.</p></div>
-      <div class="card"><div class="icon pink">💬</div><h3>Secure Chat</h3><p>Built-in messaging keeps care teams coordinated without leaving the EHR.</p></div>
-      <div class="card"><div class="icon">👔</div><h3>Employees &amp; Time Clock</h3><p>Time clock, leave requests, overtime, missed punches, holidays and time-off balances — workforce ops included.</p></div>
-      <div class="card"><div class="icon teal">💰</div><h3>Payroll</h3><p>Advances, loans and payroll workflows connected to the same employee records your clinic runs on.</p></div>
+      <div class="card" data-reveal><div class="icon">📅</div><h3>Appointments &amp; Scheduling</h3><p>Week/day views, provider filters, patient calendars, status colors, and density indicators — scheduling that keeps every chair full.</p></div>
+      <div class="card" data-reveal><div class="icon teal">👥</div><h3>Patient Management</h3><p>Rich patient profiles with insurance, balances, visit history, authorizations, and document tracking in one searchable roster.</p></div>
+      <div class="card" data-reveal><div class="icon green">📝</div><h3>Custom Note Templates</h3><p>46+ ready templates across ABA, internal medicine and general — or build your own with sections, fields and signatures.</p></div>
+      <div class="card" data-reveal><div class="icon amber">⚡</div><h3>Easy Notes</h3><p>Notes Center with status breakdowns, completion tracking, co-sign workflows and deficiency worklists. Nothing slips.</p></div>
+      <div class="card" data-reveal><div class="icon pink">🎙️</div><h3>Live Audio Transcription</h3><p>Dictate or transcribe sessions live into structured notes — finish documentation before the patient leaves the room.</p></div>
+      <div class="card" data-reveal><div class="icon">💳</div><h3>Billing &amp; EDI Claims</h3><p>Billing entries, claim tracking, ERA remittances, insurance &amp; patient payments, and bank reconciliation — revenue cycle, handled.</p></div>
+      <div class="card" data-reveal><div class="icon teal">🛡️</div><h3>Electronic Eligibility</h3><p>Run and manage insurance eligibility checks for your clients — batch checks, coverage history, and inactive alerts.</p></div>
+      <div class="card" data-reveal><div class="icon green">📋</div><h3>Authorizations &amp; Referrals</h3><p>Track auth numbers, date ranges, CPT units and utilization so visits never happen without coverage.</p></div>
+      <div class="card" data-reveal><div class="icon amber">🏥</div><h3>Multi-Clinic Management</h3><p>Agency Console to manage every location: revenue, claims, patients, users and security alerts across clinics.</p></div>
+      <div class="card" data-reveal><div class="icon pink">💬</div><h3>Secure Chat</h3><p>Built-in messaging keeps care teams coordinated without leaving the EHR.</p></div>
+      <div class="card" data-reveal><div class="icon">👔</div><h3>Employees &amp; Time Clock</h3><p>Time clock, leave requests, overtime, missed punches, holidays and time-off balances — workforce ops included.</p></div>
+      <div class="card" data-reveal><div class="icon teal">💰</div><h3>Payroll</h3><p>Advances, loans and payroll workflows connected to the same employee records your clinic runs on.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="center" data-reveal>
+      <span class="eyebrow teal">PracticeFellow Services · by AllMed Solution</span>
+      <h2>Don't just get software.<br>Get it <span class="grad">handled.</span></h2>
+      <p class="lead">Most EHRs hand you a login and wish you luck. PracticeFellow pairs the platform with a US-based services team that runs your billing and back office for you — available standalone or bundled, in all 50 states.</p>
+    </div>
+    <div class="grid-2 mt-48">
+      <div class="card svc" data-reveal>
+        <div class="icon">💰</div><h3>Medical Billing Services</h3>
+        <p>Full revenue-cycle management: clean claim submission, denial follow-up and appeals, ERA posting, patient statements and A/R cleanup. Our team collects — you focus on patients.</p>
+        <ul class="tick"><li>97%+ first-pass clean claim focus</li><li>Denial management &amp; appeals</li><li>Weekly collection reporting</li></ul>
+      </div>
+      <div class="card svc" data-reveal>
+        <div class="icon teal">🛡️</div><h3>Credentialing &amp; Enrollment</h3>
+        <p>Payer enrollment, CAQH maintenance, revalidations and contract follow-ups — handled end-to-end so your providers stay billable.</p>
+        <ul class="tick"><li>New payer applications</li><li>Revalidation tracking</li><li>Approval status monitoring</li></ul>
+      </div>
+      <div class="card svc" data-reveal>
+        <div class="icon green">✅</div><h3>Eligibility &amp; Authorizations</h3>
+        <p>Real-time eligibility verification and authorization tracking done for you — visits never happen without coverage.</p>
+        <ul class="tick"><li>Batch eligibility checks</li><li>Auth number &amp; unit tracking</li><li>Expiry &amp; utilization alerts</li></ul>
+      </div>
+      <div class="card svc" data-reveal>
+        <div class="icon amber">🖥️</div><h3>Admin Support Services</h3>
+        <p>Trained healthcare admins for scheduling, intake, data entry, fax triage and front-desk support — an extension of your team, nationwide.</p>
+        <ul class="tick"><li>Scheduling &amp; intake support</li><li>Data entry &amp; chart prep</li><li>Dedicated account manager</li></ul>
+      </div>
+    </div>
+    <div class="center mt-32" data-reveal>
+      <a class="btn btn-primary btn-lg" href="contact.html">Talk to our services team</a>
     </div>
   </div>
 </section>
 
 <section class="tour" id="tour">
   <div class="wrap">
-    <div class="center">
+    <div class="center" data-reveal>
       <span class="eyebrow">Product tour</span>
       <h2>See it in action</h2>
       <p class="lead">A quick look at the screens your team will use every day.</p>
     </div>
-    <div class="tabs" id="tourTabs">
+    <div class="tabs" id="tourTabs" data-reveal>
       <button class="tab active" data-tour="0">Agency Console</button>
       <button class="tab" data-tour="1">Scheduling</button>
       <button class="tab" data-tour="2">Notes Center</button>
@@ -172,51 +234,95 @@
 
 <section>
   <div class="wrap">
-    <div class="ai-banner">
+    <div class="ai-banner" data-reveal>
       <div>
-        <span class="eyebrow teal" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25);color:#7ef0ee">Coming soon</span>
-        <h2>PracticeFellow AI is on the way</h2>
-        <p class="mt-16">We're baking intelligence into every workflow — notes that draft themselves, claims that scrub themselves, and answers before you ask.</p>
+        <span class="eyebrow teal" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25);color:#7ef0ee">Rolling out now</span>
+        <h2>Meet Fellow AI</h2>
+        <p class="mt-16">Our named AI suite is being baked into every workflow — notes that draft themselves, claims that scrub themselves, and answers before you ask. Live audio transcription is included in every plan — never a per-note upsell.</p>
         <a class="btn btn-teal mt-24" href="contact.html">Get early access</a>
       </div>
       <div class="ai-pills">
-        <span>🤖 AI note drafting</span><span>🔍 Smart claim scrubbing</span><span>📞 AI eligibility calls</span><span>📊 Predictive denials</span><span>💬 AI scribe &amp; summaries</span><span>🧠 Documentation assistant</span>
+        <span>🎙️ Fellow Scribe <em>live transcription</em></span><span>📝 NoteDraft <em>auto-drafting</em></span><span>🔍 ClaimCheck <em>smart scrubbing</em></span><span>🛡️ DenialGuard <em>predictive alerts</em></span><span>📞 EligiCall <em>AI eligibility calls</em></span><span>🧠 InsightQ <em>ask your data</em></span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <div class="center" data-reveal>
+      <span class="eyebrow">How it works</span>
+      <h2>Live in days, not months</h2>
+      <p class="lead">Switching EHRs is the #1 fear. We engineered the fear out of it.</p>
+    </div>
+    <div class="steps mt-48">
+      <div class="step" data-reveal><div class="step-n">1</div><h3>Discover</h3><p>A 20-minute call. We map your workflows, specialties and pain points — and show you PracticeFellow on scenarios from your own practice.</p></div>
+      <div class="step" data-reveal><div class="step-n">2</div><h3>Launch</h3><p>White-glove migration: we import your patients, providers, schedules and notes. Training included. Most practices go live in days — with a go-live date we put in writing.</p></div>
+      <div class="step" data-reveal><div class="step-n">3</div><h3>Grow</h3><p>Software plus optional billing &amp; admin services scale with you — new clinics, new providers, new states. Zero chaos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="wrap">
+    <div class="center" data-reveal>
+      <span class="eyebrow">Why switch</span>
+      <h2>PracticeFellow vs. the legacy EHRs</h2>
+      <p class="lead">One platform. One team. Everything your practice actually needs — without the module maze.</p>
+    </div>
+    <div class="compare-table" data-reveal>
+      <table>
+        <thead><tr><th></th><th class="pf">PracticeFellow</th><th>Typical legacy EHR</th></tr></thead>
+        <tbody>
+          <tr><td>All-in-one: EHR + billing + payroll + chat</td><td class="pf yes">✓ Included</td><td class="no">Extra modules / fees</td></tr>
+          <tr><td>Done-for-you billing &amp; admin services</td><td class="pf yes">✓ Included option</td><td class="no">✗ Not offered</td></tr>
+          <tr><td>Multi-clinic agency console</td><td class="pf yes">✓ Included</td><td class="no">Enterprise tier only</td></tr>
+          <tr><td>Transparent pricing</td><td class="pf yes">✓ Published</td><td class="no">Demo-gated quotes</td></tr>
+          <tr><td>White-glove migration in days</td><td class="pf yes">✓ Included</td><td class="no">Weeks – months</td></tr>
+          <tr><td>AI scribe &amp; note drafting (Fellow AI)</td><td class="pf yes">✓ Rolling out</td><td class="no">Limited / paid add-on</td></tr>
+          <tr><td>Your data, if you ever leave</td><td class="pf yes">✓ Free export, no exit fees</td><td class="no">Export / cancellation fees reported</td></tr>
+          <tr><td>Go-live timeline</td><td class="pf yes">✓ Days, guaranteed in writing</td><td class="no">6–8 weeks typical</td></tr>
+          <tr><td>AI scribe / transcription</td><td class="pf yes">✓ Included in every plan</td><td class="no">$99/mo or per-note upsell</td></tr>
+          <tr><td>Share of your collections taken</td><td class="pf yes">✓ 0% — flat pricing</td><td class="no">Up to 8% reported</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
 <section style="background:#fff;border-top:1px solid var(--border-soft)">
   <div class="wrap">
-    <div class="center">
+    <div class="center" data-reveal>
       <span class="eyebrow">Loved by care teams</span>
       <h2>Practices run smoother on PracticeFellow</h2>
     </div>
     <div class="grid-3 mt-48">
-      <div class="card testi">"Credentialing, scheduling, notes and billing finally live in one place. Our claim denial rate dropped in the first quarter."<div class="who"><div class="avatar">SM</div><div><b>Sarah M.</b><small>Practice Manager, ABA Therapy Group</small></div></div></div>
-      <div class="card testi">"The Notes Center alone is worth it — I can see every unsigned note across 16 clinics in seconds. Nothing falls through the cracks."<div class="who"><div class="avatar">FR</div><div><b>Fahad R.</b><small>Operations, Multi-Clinic Agency</small></div></div></div>
-      <div class="card testi">"Eligibility checks, authorizations and ERA posting without switching tabs. Our front desk got hours back every week."<div class="who"><div class="avatar">JK</div><div><b>Jessica K.</b><small>Administrator, Internal Medicine</small></div></div></div>
+      <div class="card testi" data-reveal>"Credentialing, scheduling, notes and billing finally live in one place. Our claim denial rate dropped in the first quarter."<div class="who"><div class="avatar">SM</div><div><b>Sarah M.</b><small>Practice Manager, ABA Therapy Group</small></div></div></div>
+      <div class="card testi" data-reveal>"The Notes Center alone is worth it — I can see every unsigned note across 16 clinics in seconds. Nothing falls through the cracks."<div class="who"><div class="avatar">FR</div><div><b>Fahad R.</b><small>Operations, Multi-Clinic Agency</small></div></div></div>
+      <div class="card testi" data-reveal>"Eligibility checks, authorizations and ERA posting without switching tabs. Our front desk got hours back every week."<div class="who"><div class="avatar">JK</div><div><b>Jessica K.</b><small>Administrator, Internal Medicine</small></div></div></div>
     </div>
   </div>
 </section>
 
 <section id="faq">
   <div class="wrap">
-    <div class="center"><span class="eyebrow">FAQ</span><h2>Questions, answered</h2></div>
-    <div class="faq mt-32">
+    <div class="center" data-reveal><span class="eyebrow">FAQ</span><h2>Questions, answered</h2></div>
+    <div class="faq mt-32" data-reveal>
+      <div class="faq-item"><button class="faq-q">What if we want to leave later? <span class="chev">＋</span></button><div class="faq-a"><div>You are never locked in. Export your data free, any time — no exit fees, no data ransom, no yearly-contract threats. We keep customers by earning them.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Do you offer billing services, or just the software? <span class="chev">＋</span></button><div class="faq-a"><div>Both. Use PracticeFellow as your EHR, or hand the whole revenue cycle to our services team — billing, credentialing, eligibility, authorizations and admin support — available in all 50 states, standalone or bundled with the platform.</div></div></div>
       <div class="faq-item"><button class="faq-q">Is PracticeFellow suitable for multi-location practices? <span class="chev">＋</span></button><div class="faq-a"><div>Yes — the Agency Console was built for it. Manage clinics, users, revenue, claims and security alerts across all locations from one dashboard, with per-clinic workspaces.</div></div></div>
       <div class="faq-item"><button class="faq-q">Which specialties are supported? <span class="chev">＋</span></button><div class="faq-a"><div>ABA therapy, speech &amp; occupational therapy, internal medicine and general practice — with 46+ note templates covering assessments, treatments, SOAP, BIRP, DAP and more. Custom templates are fully supported.</div></div></div>
       <div class="faq-item"><button class="faq-q">How does billing work? <span class="chev">＋</span></button><div class="faq-a"><div>Billing entries track billed vs. allowed amounts, patient responsibility, claim numbers and lock status. Insurance payments, patient payments, ERA remittances and bank reconciliation are all included, with EDI claim submission.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Can we migrate from our current EHR? <span class="chev">＋</span></button><div class="faq-a"><div>Yes. Our onboarding team helps import patients, providers, schedules and historical data. Book a demo and we'll scope your migration.</div></div></div>
-      <div class="faq-item"><button class="faq-q">When are the AI features launching? <span class="chev">＋</span></button><div class="faq-a"><div>AI note drafting, smart claim scrubbing and the AI scribe are in active development. Join the early-access list and we'll notify you as each feature rolls out.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Can we migrate from our current EHR? <span class="chev">＋</span></button><div class="faq-a"><div>Yes. Our onboarding team helps import patients, providers, schedules and historical data — most practices go live in days. Book a demo and we'll scope your migration.</div></div></div>
+      <div class="faq-item"><button class="faq-q">When are the Fellow AI features launching? <span class="chev">＋</span></button><div class="faq-a"><div>Fellow Scribe (live transcription) is available now; NoteDraft, ClaimCheck and the rest are rolling out. Join the early-access list and we'll notify you as each capability ships.</div></div></div>
     </div>
   </div>
 </section>
 
 <section style="padding-top:0">
   <div class="wrap">
-    <div class="cta-band">
-      <div><h2>See PracticeFellow on your own data</h2><p>A 30-minute personalized demo with our team — we'll walk through scheduling, notes, billing and multi-clinic management.</p></div>
+    <div class="cta-band" data-reveal>
+      <div><h2>See PracticeFellow on your own data</h2><p>A 20-minute personalized demo — we'll walk through scheduling, notes, billing and multi-clinic management.</p></div>
       <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-ghost btn-lg" href="contact.html">Book a demo</a><a class="btn btn-lg" style="background:#fff;color:var(--primary)" href="pricing.html">View pricing</a></div>
     </div>
   </div>
@@ -227,16 +333,19 @@
     <div class="foot-grid">
       <div>
         <div class="foot-brand"><span class="brand-mark">+</span><span><b>Practice</b><span class="fellow" style="color:#7ef0ee">fellow</span></span></div>
-        <p style="font-size:14.5px;max-width:300px">The all-in-one EHR for therapy and medical practices. Live at <a href="https://www.practicefellow.com" style="display:inline;color:#7ef0ee">practicefellow.com</a>.</p>
+        <p style="font-size:14.5px;max-width:300px">The all-in-one EHR for therapy and medical practices — plus billing &amp; admin services nationwide. Live at <a href="https://www.practicefellow.com" style="display:inline;color:#7ef0ee">practicefellow.com</a>.</p>
       </div>
-      <div><h4>Product</h4><a href="features.html">Features</a><a href="index.html#tour">Product tour</a><a href="pricing.html">Pricing</a><a href="index.html#faq">FAQ</a></div>
-      <div><h4>Company</h4><a href="contact.html">Contact</a><a href="contact.html">Book a demo</a><a href="dashboard.html">Client login</a></div>
+      <div><h4>Product</h4><a href="features.html">Features</a><a href="index.html#demo">Watch demo</a><a href="index.html#tour">Product tour</a><a href="pricing.html">Pricing</a><a href="index.html#faq">FAQ</a></div>
+      <div><h4>Services</h4><a href="index.html#services">Billing services</a><a href="index.html#services">Credentialing</a><a href="index.html#services">Admin support</a><a href="contact.html">Book a demo</a></div>
+      <div><h4>Company</h4><a href="contact.html">Contact</a><a href="dashboard.html">Client login</a></div>
       <div><h4>Legal</h4><a href="#">Terms of Service</a><a href="#">Privacy Policy</a><a href="#">HIPAA Notice</a></div>
     </div>
     <div class="foot-bottom"><span>© 2026 PracticeFellow. All rights reserved.</span><span>Built with care for care teams.</span></div>
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
